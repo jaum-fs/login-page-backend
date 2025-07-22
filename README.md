@@ -10,6 +10,6 @@ Run LoginAuthApiApplication.java. Endpoints are accessed by the address `http://
 
 | METHOD | ENDPOINT | DESCRIPTION | REQUEST EXAMPLE | RESPONSE EXAMPLE |
 |---|---|---|---|---|
-| GET | `/user` | Return a page when user has a token | `curl -X GET "http://exemplo.com/api/usuarios"`
+| GET | `/user` | Return a page when user has a token | `curl -X GET "http://localhost:8080/auth/login"`
 | POST | `/auth/login` | Signin request | `curl -X POST -H "Content-Type: application/json" -d '{"email": "test@gmail.com", "password":"teste123"}' "http://localhost:8080/auth/login"` | `{"name": "xpto", "token":"xpto"}` |
 | POST | `/auth/register` | Signup request | `curl -X POST -H "Content-Type: application/json" -d '{"name":"John","email": "test@gmail.com", "password":"teste123"}' "http://localhost:8080/auth/register"` | `{"name": "John", "token":"xpto"}` |
